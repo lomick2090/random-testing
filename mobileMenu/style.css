@@ -1,0 +1,54 @@
+body {
+    margin:0px;
+}
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    background-color: darkslategray;
+}
+
+.menuitem {
+    background-image: url(./menu\ background.png);
+    background-size: contain;
+    flex-grow:1;
+    text-align: center;
+    padding:10px;
+    border:1px solid black;
+    color: white;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+#selectedtab {
+    outline:2px;
+    filter: brightness(50%);
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom:25px;
+    list-style-type: none;
+    padding:5px;
+}
+
+.dropdownmenu {
+    position: absolute;
+    right: 0px;
+    top:77px;
+    color:white;
+    background: gray;
+    font-size:3em;
+    height: 0px;
+    transition: height 500ms ease-in-out 0s;
+}
+
+.menudropped {
+    height: auto;
+}
+
+.menudropped > ul > li:hover {
+    background-color: rgb(59, 59, 59);
+    cursor: pointer;
+}
