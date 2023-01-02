@@ -1,4 +1,7 @@
-p {
+
+
+p:hover {
     color:red;
-    transition:color 1s ease-in-out 1s;
+    font-size: 3em;
+    transition:all 1s ease-in-out 0s;
 }
