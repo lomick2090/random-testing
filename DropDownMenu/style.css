@@ -9,12 +9,12 @@
     padding-left: 10px;
     gap: 2px;
     background-color: rgb(35, 35, 245);
-    transform: translate(-100px);
+    height:0px;
     color: white;
     width: 80px;
+    transition: height 300ms ease-out;
 }
 
 .visible {
-    transform: translate(0px);
-
+    height: 300px;
 }
