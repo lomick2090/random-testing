@@ -1,0 +1,4 @@
+p {
+    color:red;
+    transition:color 1s ease-in-out 1s;
+}
