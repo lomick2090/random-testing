@@ -1,7 +1,19 @@
+.trigger {
+    width: 40px;
+    height: 20px;
+    transition:all 1s ease-in-out 0s;
+}
 
+p {
+    transition:all 1s ease-in-out 0s;
+}
 
-p:hover {
+.trigger:hover {
+    width: 120px;
+    height: 120px;
+}
+
+.trigger:hover p {
     color:red;
     font-size: 3em;
-    transition:all 1s ease-in-out 0s;
 }
