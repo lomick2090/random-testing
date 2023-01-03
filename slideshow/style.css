@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.frame {
+    position:relative;
+    width: 400px;
+    height: 400px;
+}
+
+img {
+    z-index:0;
+    width:400px;
+    height: 400px;
+}
+
+.slides {
+    position:absolute;
+    display: flex;
+    left: 0px;
+    transition: left 300ms ease-in-out
+}
+
+.blocker {
+    z-index: 1;
+    flex-grow: 1;
+    flex-shrink:1;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding:12px;
+}
+
+#blocker1 {
+    justify-content: end;
+}
