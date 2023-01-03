@@ -2,9 +2,18 @@ body {
     margin: 0px;
     height:100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    gap:0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
 }
 
 .frame {
@@ -37,6 +46,27 @@ img {
     padding:12px;
 }
 
+button {
+    cursor: pointer;
+}
+
 #blocker1 {
     justify-content: end;
+}
+
+.dots {
+    margin-top:-45px;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+.chosen {
+    background-color: rgb(105, 105, 105);
 }
