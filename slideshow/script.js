@@ -1,6 +1,7 @@
 let slides = document.querySelector('.slides')
 let slideIndex = 0;
 let dots = document.querySelectorAll('.dot');
+let timeout;
 
 function advanceSlide(direction) {
     if (direction == 'right') {
@@ -43,5 +44,8 @@ dots.forEach(dot => {
 })});
 
 
+
+
 document.querySelector('#leftbutton').addEventListener('click', () => advanceSlide('left'));
-document.querySelector('#rightbutton').addEventListener('click', () => advanceSlide('right'))
+document.querySelector('#rightbutton').addEventListener('click', () => advanceSlide('right'));
+setInterval(() => advanceSlide('right'), 5000)
