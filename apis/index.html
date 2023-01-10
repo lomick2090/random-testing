@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giphy Api</title>
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <img src="#">
+
+    <form>
+        <label for="search">Search Gif:<input type="text" id="search" name="search" value="cats"></label>
+        <label for="weird">Weirdness Level: <input type="number" id='weird' name='wierd' min="0" max="10" value="0"></label>
+    </form>
+
+    <div>
+        <button onclick="userSearch()">Search New Gif</button>
+        <button onclick="refreshSearch()">Refresh Search</button>
+    </div>
     
 </body>
 </html>
