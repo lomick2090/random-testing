@@ -4,10 +4,10 @@ const weird = document.getElementById('weird');
 let searchValue = search.value;
 let weirdValue = weird.value;
 
-function searchGif(search, weird) {
+async function searchGif(search, weird) {
     let searchURL = `https://api.giphy.com/v1/gifs/translate?api_key=t8JRu3bZqBfvr0A1uorQvyFWAkWt1t0B&s=${search}&weirdness=${weird}`;
 
-    return fetch(searchURL, 
+    let gif = await fetch(searchURL, 
         {mode: 'cors'}
         )
         .then((response) => {
@@ -16,6 +16,8 @@ function searchGif(search, weird) {
         .then ((response) => {
             return response.data.images.original.url
     })
+
+    return gif;
 }
 
 function userSearch() {
